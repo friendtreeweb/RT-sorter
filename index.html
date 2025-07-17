@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rain Tree Idola Sorter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Rain Tree Idola Sorter</h1>
+
+        <div class="category-selection">
+            <h2>Pilih Kategori Sorting:</h2>
+            <button id="category-all" data-category="all">Umum</button>
+            <button id="category-visual" data-category="visual">Visual</button>
+            <button id="category-talent" data-category="talent">Bakat</button>
+            <button id="category-comedian" data-category="comedian">Pelawak</button>
+        </div>
+
+        <div class="sorter-area">
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <p id="progressText">Progress: 0%</p>
+
+            <div class="idol-display">
+                <div class="idol-card" id="idol1">
+                    <img src="" alt="Idola 1">
+                    <p class="idol-name"></p>
+                </div>
+                <div class="idol-card" id="idol2">
+                    <img src="" alt="Idola 2">
+                    <p class="idol-name"></p>
+                </div>
+            </div>
+
+            <div class="sorter-buttons">
+                <button id="select-idol1">Pilih Ini</button>
+                <button id="draw-button">Seri</button>
+                <button id="select-idol2">Pilih Ini</button>
+            </div>
+        </div>
+
+        <div class="results-area" style="display: none;">
+            <h2>Hasil Sorting Anda:</h2>
+            <ol id="ranked-list"></ol>
+            <div class="share-download-options">
+                <button id="download-image">Unduh Gambar Hasil</button>
+                <button id="share-results">Bagikan Hasil</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
